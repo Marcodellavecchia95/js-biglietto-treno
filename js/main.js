@@ -6,11 +6,13 @@ console.log(travelDistance, userAge);
 const finalPrice = travelDistance * 0.21;
 
 if (userAge < 18) {
-  outputText = "Il biglietto per minorenni costa €" + (finalPrice * 20) / 100;
+  outputText =
+    "Il biglietto per minorenni costa €" + (finalPrice.toFixed(1) * 20) / 100;
 } else if (userAge > 65) {
-  outputText = "Il biglietto per Over 65 costa €" + (finalPrice * 40) / 100;
+  outputText =
+    "Il biglietto per Over 65 costa €" + (finalPrice.toFixed(1) * 40) / 100;
 } else {
-  outputText = "Il biglietto costa €" + finalPrice;
+  outputText = "Il biglietto costa €" + finalPrice.toFixed(1);
 }
 
 alert(outputText);
